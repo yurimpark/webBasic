@@ -5,18 +5,33 @@ span {
 
 .box1 {
   background-color: gold;
-  position: absolute;
+  width: 350px;
+  padding: 0 25px;
+  border: 10px solid red;
+  margin: 0 50px;
+  box-sizing: content-box;
 }
 .box2 {
   background-color: pink;
 }
 .box3 {
   background-color: lightsalmon;
+  width: 350px;
+  padding: 0 25px;
+  border: 10px solid red;
+  margin: 0 50px;
+  box-sizing: border-box;
 }
 .box4 {
   background-color: lightskyblue;
 }
 .box5 {
   background-color: orange;
-  position: relative;
+  display: inline-block;
+}
+.box6 {
+  display: inline-block;
+  width: 500px;
+  background-color: darkblue;
+  color: #fff;
 }

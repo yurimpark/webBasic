@@ -3,14 +3,22 @@ span {
   font-size: 48px;
 }
 
+/* 박스사이징을 계산할 때 무조건 마진은 제외
+  content-box를 주면, content의 크기가 width보다 커진다.
+  content size = width + padding + border
+  border-box를 주면, content의 크기가 width와 같고 그 안에 padding과 border가 들어간다.
+  content size = width(width에 padding border포함) */
+
 .box1 {
   background-color: gold;
   width: 350px;
   padding: 0 25px;
   border: 10px solid red;
   margin: 0 50px;
+  /* 350px + 25px + 25px + 10px + 10px */
   box-sizing: content-box;
 }
+
 .box2 {
   background-color: pink;
 }
@@ -20,7 +28,7 @@ span {
   padding: 0 25px;
   border: 10px solid red;
   margin: 0 50px;
-  /* 마진빼고! 패딩 보더 포함 */
+  /* 350px안에 패딩과 보더가 포함됨 */
   box-sizing: border-box;
 }
 .box4 {

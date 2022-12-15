@@ -1,0 +1,26 @@
+.box {
+  border: 10px solid darkblue;
+  position: relative;
+}
+.box1 {
+  background-color: gold;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.box2 {
+  background-color: #ffc0cb;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.box3 {
+  background-color: lime;
+}
+.box4 {
+  background-color: lightskyblue;
+  /* fixed는 뷰포트 기준으로! */
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}

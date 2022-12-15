@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        width: 600px;
+      }
+
+      .container > div {
+        width: 200px;
+        /* height: 200px; */
+        background: dodgerblue;
+        border: 1px solid red;
+        /* flex-grow: 1; */
+        /* flex-basis: auto; */
+        /* grow는 basis가 auto일 경우
+        컨텐츠의 크기를 제외한 나머지 영역을 grow에 반영한다.
+       이래서 basis값을 없앱니다. */
+        flex-basis: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">글자가 길어진다</div>
+      <div class="box">ㅁㅁ</div>
+      <div class="box">ㅁㅁㅁㅁㅁ</div>
+    </div>
+  </body>
+</html>

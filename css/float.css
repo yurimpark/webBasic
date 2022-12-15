@@ -1,0 +1,41 @@
+.box {
+  border: 10px solid red;
+  /* 부모에 display: flow-root; or overflow: hidden; 를 주면
+  BFC때문에 잃어버린 자식의 흐름을 되찾아줌
+  overflow: hidden; 은 부모가 움직이면 hidden속성때문에
+  자식이 안보이는 경우가 생길 수 있으므로 display: flow-root; 를 권장! */
+  /* display: flow-root; */
+  /* overflow: hidden; */
+}
+
+/* .box::after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+.box1 {
+  background-color: gold;
+  float: right;
+}
+.box2 {
+  background-color: pink;
+  float: right;
+  width: 500px;
+}
+.box3 {
+  background-color: lime;
+  float: right;
+  width: 300px;
+}
+.box4 {
+  background-color: aqua;
+  float: left;
+  width: 500px;
+}
+.lorem {
+  background-color: sienna;
+  clear: both;
+  width: 200px;
+  height: 100px;
+}

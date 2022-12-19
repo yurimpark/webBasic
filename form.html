@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키보드 조작이 가능한 스위치 버튼 만들기</title>
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
+    <div class="switchComponent">
+      <span class="switch">
+        <input
+          type="checkbox"
+          class="switchInput switchPrimary"
+          name="playContinue"
+          id="playContinue"
+        />
+        <label for="playContinue" class="switchLabel">연속재생</label>
+      </span>
+    </div>
+
+    <div class="switchComponent">
+      <span class="switch">
+        <input
+          type="checkbox"
+          class="switchInput switchSecondary"
+          name="profileLock"
+          id="profileLock"
+        />
+        <label for="profileLock" class="switchLabel switchLabel--full"
+          >프로필 잠금설정</label
+        >
+      </span>
+    </div>
+  </body>
+</html>

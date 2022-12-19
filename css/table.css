@@ -1,5 +1,6 @@
 table {
   border-spacing: 0;
+  /* https://developer.mozilla.org/ko/docs/Web/CSS/border-collapse */
   border-collapse: collapse;
 }
 

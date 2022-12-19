@@ -7,6 +7,8 @@ body {
   height: 400px;
   /* background-color: pink;
   background-image: url("./../images/css.jpg");
+  contain은 높이에 맞춤, cover은 가로에 맞춤
+  https://developer.mozilla.org/ko/docs/Web/CSS/background-size
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 0; */
